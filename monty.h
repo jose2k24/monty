@@ -84,6 +84,15 @@ void sub(stack_t **top);
 void mul(stack_t **top);
 void _div(stack_t **top);
 void mod(stack_t **top);
-int _atoi(char *s, int* n);
 
+
+typedef struct line_s
+{
+	char *content;
+	int number;
+} line_t;
+line_t *textfile_to_array(const char *filename);
+void free_stack(stack_t *head);
+void free_lines(line_t *head);
+int _atoi(char *s, int* n);
 #endif
