@@ -1,3 +1,4 @@
+// 47
 #ifndef MONTY_H
 #define MONTY_H
 
@@ -42,12 +43,16 @@ typedef struct instruction_s
         void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
+/*  123comment
+
 union montyfunctype
 {
 	void (*toponly)(stack_t **top);
 	void (*pushmode)(stack_t **top, stack_t **bot, int val, int mode);
 	void (*topbot)(stack_t **top, stack_t **bot);
 };
+
+
 
 typedef struct optype
 {
@@ -61,6 +66,8 @@ typedef struct montyglob
 	unsigned long linenum;
 	FILE* script;
 } montyglob;
+
+*/
 
 /* from montyparse.c */
 void exitwrap(int exitcode, char *existring, stack_t *top);
