@@ -54,7 +54,7 @@ void pop(stack_t **top)
 	stack_t *ptr = *top;
 
 	if (ptr == NULL)
-		exitwrap(EXIT_FAILURE, "can't pop an empty stack", *top);
+		exitwrap(EXIT_FAILURE, "L%d:can't pop an empty stack", *top);
 	if (ptr->prev == NULL)
 	{
 		free(*top);
