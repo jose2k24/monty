@@ -1,8 +1,13 @@
-#ifndef MONTYH
-#define MONTYH
+#ifndef MONTY_H
+#define MONTY_H
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
+#include <stdbool.h>
+#include <ctype.h>
+#include <fcntl.h>
 
 #define STACKMODE 0
 #define QUEUEMODE 1
@@ -79,5 +84,6 @@ void sub(stack_t **top);
 void mul(stack_t **top);
 void _div(stack_t **top);
 void mod(stack_t **top);
+int _atoi(char *s, int* n);
 
 #endif
